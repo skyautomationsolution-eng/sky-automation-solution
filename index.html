@@ -10,6 +10,10 @@
 
 <meta name="keywords" content="AI Chatbot, Staycation Automation, Guest Messaging, Facebook Messenger Automation, n8n Integration, Hospitality Automation">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -17,38 +21,76 @@
 
 <header>
     <div class="container nav">
-        <img src="assets/logo.png" alt="Sky Automation Solution Logo" class="logo">
+        <a href="index.html" class="brand">
+            <img src="assets/logo.png" alt="Sky Automation Solution Logo" class="logo">
+            <span class="brand-name">Sky Automation Solution</span>
+        </a>
 
-        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+        </button>
+
+        <nav class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
             <a href="privacy-policy.html">Privacy</a>
             <a href="terms-of-service.html">Terms</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
         </nav>
     </div>
 </header>
 
 <section class="hero">
-    <div class="container">
+
+    <svg class="hero-circuit" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#ffffff" stroke-width="1.5">
+            <path d="M0 120 H180 V40 H420 V160 H620"/>
+            <path d="M1200 90 H980 V200 H760 V100 H600"/>
+            <path d="M0 680 H220 V760 H480 V620 H700"/>
+            <path d="M1200 700 H1000 V600 H820 V740 H650"/>
+            <path d="M600 160 V400"/>
+            <path d="M600 400 V620"/>
+        </g>
+        <g fill="#64B5F6">
+            <circle cx="180" cy="120" r="5"/>
+            <circle cx="420" cy="40" r="4"/>
+            <circle cx="620" cy="160" r="5"/>
+            <circle cx="980" cy="90" r="4"/>
+            <circle cx="760" cy="200" r="5"/>
+            <circle cx="220" cy="680" r="4"/>
+            <circle cx="480" cy="760" r="5"/>
+            <circle cx="700" cy="620" r="4"/>
+            <circle cx="1000" cy="700" r="5"/>
+            <circle cx="820" cy="600" r="4"/>
+            <circle cx="600" cy="400" r="6"/>
+        </g>
+    </svg>
+
+    <div class="container hero-inner">
+
+        <span class="eyebrow"><span class="dot"></span> Built for Staycation &amp; Condotel Operators</span>
 
         <h1>
-            Automated Guest Messaging for Staycation Businesses
+            Automated Guest Messaging<br><span class="grad">for Staycation Businesses</span>
         </h1>
 
         <p>
-            We design and deploy seamless AI chatbot and workflow automations
-            that handle bookings, guest inquiries, and check-ins 24/7.
+            We design and deploy AI chatbot and workflow automations
+            that handle bookings, guest inquiries, and check-ins 24/7 —
+            so you don't have to.
         </p>
 
-        <a href="contact.html" class="btn">
-            Book a Demo
-        </a>
+        <div class="hero-ctas">
+            <a href="contact.html" class="btn">Book a Demo</a>
+            <a href="#services" class="btn-outline">See How It Works</a>
+        </div>
+
+        <p class="hero-note">Trusted by staycation &amp; condotel owners across Metro Manila</p>
 
     </div>
 </section>
 
-<section class="services">
+<section class="services" id="services">
 
     <div class="container">
 
@@ -143,5 +185,6 @@
 
 </footer>
 
+<script src="assets/main.js"></script>
 </body>
 </html>
